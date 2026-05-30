@@ -1,86 +1,116 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>TLH APP</title>
-
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/animation.css">
+<title>TLH LINK BIO</title>
 
 <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+<style>
+
+body{
+    background:#050505;
+    color:white;
+    font-family:Arial, sans-serif;
+    text-align:center;
+    padding:20px;
+    margin:0;
+}
+
+.logo{
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    margin-top:20px;
+    object-fit:cover;
+    box-shadow:0 0 25px #00c853;
+}
+
+h1{
+    font-size:42px;
+    margin-top:25px;
+}
+
+p{
+    color:#cccccc;
+    font-size:20px;
+    margin-bottom:35px;
+}
+
+.btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    background:#00c853;
+    color:white;
+    padding:18px;
+    margin:18px auto;
+    border-radius:15px;
+    text-decoration:none;
+    font-size:22px;
+    width:90%;
+    max-width:420px;
+    transition:0.3s;
+    box-shadow:0 0 15px #00c853;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+    background:#00a844;
+    box-shadow:0 0 25px #00ff66;
+}
+
+.footer{
+    margin-top:40px;
+    color:#777;
+    font-size:14px;
+}
+
+</style>
 </head>
 
 <body>
 
-<!-- SPLASH SCREEN -->
+<img class="logo"
+src="https://imgur.com/a/ELXsNc3">
 
-<div id="splash">
-
-<img src="assets/logo.png">
-
-<h1>TLH APP</h1>
-
-</div>
-
-<!-- MAIN -->
-
-<div class="container">
-
-<div class="logo-box">
-    <h1 class="logo-text">TLH</h1>
-</div>
-
-<h1>
-Teknisi Listrik Harian
-</h1>
+<h1>Teknisi Listrik Harian</h1>
 
 <p>
-Aplikasi Teknisi Modern Siap Online
+Support Teknisi • Instalasi • Maintenance
 </p>
 
-<button onclick="masukApp()">
-
-<i class="fa-solid fa-bolt"></i>
-
-Masuk TLH APP
-
-</button>
-
-<div class="menu">
-
-<a href="#">
-<i class="fa-solid fa-house"></i>
-<span>Home</span>
+<a class="btn"
+href="https://wa.me/6281390795955">
+<i class="fa-brands fa-whatsapp"></i>
+Chat WA Bisnis
 </a>
 
-<a href="#">
+<a class="btn"
+href="https://facebook.com/idpromosi">
+<i class="fa-brands fa-facebook-f"></i>
+Facebook IDPROMOSI
+</a>
+
+<a class="btn"
+href="https://facebook.com/groups">
 <i class="fa-solid fa-users"></i>
-<span>Tentang</span>
+Group TLH
 </a>
 
-<a href="#">
-<i class="fa-solid fa-briefcase"></i>
-<span>Layanan</span>
+<a class="btn"
+href="#">
+<i class="fa-solid fa-book-open"></i>
+Katalog Jasa
 </a>
 
-<a href="#">
-<i class="fa-solid fa-phone"></i>
-<span>Kontak</span>
-</a>
-
+<div class="footer">
+© 2026 TLH DIGITAL
 </div>
-
-</div>
-
-</div>
-
-<script src="js/app.js"></script>
-<script src="js/loading.js"></script>
 
 </body>
 </html>
